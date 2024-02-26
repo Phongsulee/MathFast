@@ -1,0 +1,16 @@
+โฟเดอร์ bootstrap4 โหลดมาจากเว็บ
+https://getbootstrap.com/docs/4.0/getting-started/download/
+
+*** ตอนนี้มี bootstrap5 แล้ว แต่หนังสือเป็น bootstrap4 ให้ทำตามหนังสือไปก่อน ***
+-----------------------------------------
+ไฟล์ jQuery.min.js หรือ jQuery.slim.min.js โหลดมาจากเว็บ
+https://jquery.com/download/
+เก็บไว้ในโฟเดอร์ js ของ bootstrap
+
+*** เลือกโหลดตรงหัวข้อ Using jQuery with a CDN ***
+-----------------------------------------
+ไฟล์ popper.min.js โหลดมาจากเว็บ
+https://popper.js.org/
+ก็อปปี้ลิ้งตรง cdn เปิดอีกเว็บนึง จากนั้นคลิกขวา กดบันทึกเป็นและ save file
+
+-----------------------------------------

@@ -1,0 +1,55 @@
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+#main_nav {
+    font-size: 30px;
+    color: #20d320;
+
+}
+
+#container_main {
+    width: 100%;
+    margin: auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px #888888;
+}
+
+#myTextInput[type="text"] {
+    width: 100%;
+    /* กำหนดความกว้าง */
+    padding: 10px;
+    /* กำหนด padding */
+    margin: 5px 0;
+    /* กำหนด margin ด้านบนและล่าง */
+    border: 1px solid #ccc;
+    /* กำหนดขอบ */
+    border-radius: 4px;
+    /* กำหนดให้ขอบเป็นรูปโค้ง */
+}
+
+#myTextInput[type="text"]:focus {
+    border-color: #4A90E2;
+    /* เปลี่ยนสีขอบเมื่อ input มี focus */
+    outline: none;
+    /* ลบ outline ที่อาจปรากฏในบางเบราว์เซอร์ */
+}
+
+input[type="text"] {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box; /* ให้ padding และ border เป็นส่วนหนึ่งของความกว้างที่กำหนด */
+}
+
+
+  
