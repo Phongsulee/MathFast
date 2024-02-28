@@ -31,31 +31,97 @@
     </nav>
     <!--------------------------- END NAVBAR ------------------------------->
     <!---------------------------------------------------------------------->
-    <!-------------------------- container_1 ------------------------------->
+    <!-------------------------- container_index1 ------------------------------->
+    <br><br>
+    <div class="container" id="container_index1">
+        <h1>คณิตคิดง่ายๆ</h1>
+    </div><br>
+    <!------------------------- END container_index1 ---------------------------->
+    <!---------------------------------------------------------------------->
+    <!-------------------------- container_Plus ------------------------------->
     <br><br>
     <div class="container" id="container_main">
-        <h2>ลองบวกเลขดูสิ</h2><br>
-        <input type="text" id="myTextInput">
-        <br><br>
-        <p>+</p>
-        <input type="text" id="myTextInput">
-        <br><br>
-        <p>ผลรวมทั้งหมดคือ: </p>
-        <br><br><button>Default Button</button> <button>Default Button</button>
+        <h2>บวกเลข</h2><br>
+        <div class="container">
+            <div class="col-sm text-center">
+                <input type="number" class="input" id="input_Plus1"><br><br>
+                <p>+</p>
+                <input type="number" class="input" id="input_Plus2"><br>
+            </div>
+        </div><br>
+        <p>เท่ากับ</p>
+        <div class="mt-3 text-center" id="result_Plus">
+            <p></p>
+        </div>
+        <div class="text-center"><br>
+            <button id="button_Submit" onclick="calculateSum_Plus()">Submit</button>
+            <button id="button_Clear" onclick="clearInputs_Plus()">Clear</button>
+        </div>
     </div><br>
-    <!------------------------- END container_1 ---------------------------->
+    <!------------------------- END container_Plus ---------------------------->
     <!---------------------------------------------------------------------->
-    <!-------------------------- container_2 ------------------------------->
+    <!-------------------------- container_Minus ------------------------------->
     <div class="container" id="container_main">
-        <h2>ลองลบเลขดูสิ</h2><br>
-        <input type="text" id="myTextInput">
-        <br><br>
-        <p>-</p>
-        <input type="text" id="myTextInput">
-        <br><br>
-        <p>ผลรวมทั้งหมดคือ: </p>
+        <h2>ลบเลข</h2><br>
+        <div class="container">
+            <div class="col-sm text-center">
+                <input type="number" class="input" id="input_Minus1"><br><br>
+                <p>-</p>
+                <input type="number" class="input" id="input_Minus2"><br>
+            </div>
+        </div><br>
+        <p>เท่ากับ</p>
+        <div class="mt-3 text-center" id="result_Minus">
+            <p></p>
+        </div>
+        <div class="text-center"><br>
+            <button id="button_Submit" onclick="calculateSum_Minus()">Submit</button>
+            <button id="button_Clear" onclick="clearInputs_Minus()">Clear</button>
+        </div>
     </div><br>
-    <!------------------------- END container_2 ---------------------------->
+    <!------------------------- END container_Minus ---------------------------->
+    <!---------------------------------------------------------------------->
+    <!-------------------------- container_Multiplied ------------------------------->
+    <div class="container" id="container_main">
+        <h2>คูณเลข</h2><br>
+        <div class="container">
+            <div class="col-sm text-center">
+                <input type="number" class="input" id="input_Multiplied1"><br><br>
+                <p>x</p>
+                <input type="number" class="input" id="input_Multiplied2"><br>
+            </div>
+        </div><br>
+        <p>เท่ากับ</p>
+        <div class="mt-3 text-center" id="result_Multiplied">
+            <p></p>
+        </div>
+        <div class="text-center"><br>
+            <button id="button_Submit" onclick="calculateSum_Multiplied()">Submit</button>
+            <button id="button_Clear" onclick="clearInputs_Multiplied()">Clear</button>
+        </div>
+    </div><br>
+    <!------------------------- END container_Multiplied ---------------------------->
+    <!---------------------------------------------------------------------->
+    <!-------------------------- container_Divide ------------------------------->
+    <div class="container" id="container_main">
+        <h2>หารเลข</h2><br>
+        <div class="container">
+            <div class="col-sm text-center">
+                <input type="number" class="input" id="input_Divide1"><br><br>
+                <p>/</p>
+                <input type="number" class="input" id="input_Divide2"><br>
+            </div>
+        </div><br>
+        <p>เท่ากับ</p>
+        <div class="mt-3 text-center" id="result_Divide">
+            <p></p>
+        </div>
+        <div class="text-center"><br>
+            <button id="button_Submit" onclick="calculateSum_Divide()">Submit</button>
+            <button id="button_Clear" onclick="clearInputs_Divide()">Clear</button>
+        </div>
+    </div><br>
+    <!------------------------- END container_Divide ---------------------------->
     <!---------------------------------------------------------------------->
 </body>
 
