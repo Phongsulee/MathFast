@@ -78,3 +78,20 @@ function clearInputs_Divide() {
     document.getElementById('result_Divide').innerHTML = '';
 }
 //-----------------------------------------------------//
+//---------------------- ฟังชันคลิกลิ้ง คำนวนไว ----------------------//
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById('calculateLink').addEventListener('click', (e) => {
+        e.preventDefault();
+
+        let input_CalLink = prompt("กรุณากรอกเลขที่ต้องการคำนวน: ");
+
+        try {
+            let result = eval(input_CalLink);
+            alert("ผลลัพธ์คือ: " + result);
+        } catch (e) {
+            alert("เกิดข้อผิดพลาดในการคำนวณ: " + e);
+        }
+    });
+});
+//----------------------------------------------------------------//
