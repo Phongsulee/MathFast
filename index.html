@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Fast</title>
+    <title>Fast Math</title>
 
     <!-- ไฟล์ static เรียกใช้งานไฟล์ bootstarp4_css -->
     <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
@@ -26,11 +26,23 @@
         <a class="navbar-brand" id="main_nav">Fast Math</a>
 
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">Simple math<span class="sr-only">(current)</span></a>
+            <li class="nav-item ">
+                <a class="nav-link" href="index.html">คิดเลขทั่วไป<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a id="calculateLink" class="nav-link" href="#">Fast math</a>
+                <a class="nav-link" href="GeometricFormula.html">เรขาคณิตฯ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">สถิติ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"></a>
+            </li>
+            <li class="nav-item">
+                <button class="button" id="calculateLink">เครื่องคิดเลข</button>
             </li>
         </ul>
 
@@ -40,14 +52,15 @@
     <!-------------------------- container_index1 ------------------------------->
     <br><br><br><br>
     <div class="container" id="container_index1">
-        <h1>คณิตคิดง่ายๆ</h1>
+        <h1>คิดเลขทั่วไป</h1>
     </div><br>
     <!------------------------- END container_index1 ---------------------------->
     <!---------------------------------------------------------------------->
     <!-------------------------- container_Plus ------------------------------->
-    <br><br>
+    <br>
     <div class="container" id="container_main">
         <h2>บวกเลข</h2><br>
+        <p>ตัวอย่าง: a + b = "ผลลัพธ์"</p><br>
         <div class="container">
             <div class="col-sm text-center">
                 <input type="number" class="input" id="input_Plus1"><br><br>
@@ -69,6 +82,7 @@
     <!-------------------------- container_Minus ------------------------------->
     <div class="container" id="container_main">
         <h2>ลบเลข</h2><br>
+        <p>ตัวอย่าง: a - b = "ผลลัพธ์"</p><br>
         <div class="container">
             <div class="col-sm text-center">
                 <input type="number" class="input" id="input_Minus1"><br><br>
@@ -90,6 +104,7 @@
     <!-------------------------- container_Multiplied ------------------------------->
     <div class="container" id="container_main">
         <h2>คูณเลข</h2><br>
+        <p>ตัวอย่าง: a x b = "ผลลัพธ์"</p><br>
         <div class="container">
             <div class="col-sm text-center">
                 <input type="number" class="input" id="input_Multiplied1"><br><br>
@@ -111,10 +126,11 @@
     <!-------------------------- container_Divide ------------------------------->
     <div class="container" id="container_main">
         <h2>หารเลข</h2><br>
+        <p>ตัวอย่าง: a ÷ b = "ผลลัพธ์"</p><br>
         <div class="container">
             <div class="col-sm text-center">
                 <input type="number" class="input" id="input_Divide1"><br><br>
-                <p>/</p>
+                <p>÷</p>
                 <input type="number" class="input" id="input_Divide2"><br>
             </div>
         </div><br>
@@ -129,6 +145,20 @@
     </div><br>
     <!------------------------- END container_Divide ---------------------------->
     <!---------------------------------------------------------------------->
+    <!-------------------------- container_Credit ------------------------------->
+    <div class="p-2 container-fluid">
+        <h2>Hello</h2>
+    </div>
+    <!-------------------------- END container_Credit --------------------------->
+    <!---------------------------------------------------------------------->
+    <!-------------------------- container_Footer ------------------------------->
+    <footer class="footer p-2 bg-dark">
+        <p>2024 Fast Math</p>
+    </footer>
+
+    <!-------------------------- END container_Footer --------------------------->
+
+
 </body>
 
 </html>

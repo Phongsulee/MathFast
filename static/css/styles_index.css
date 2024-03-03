@@ -9,6 +9,11 @@ p {
     text-align: center;
 }
 
+
+li {
+    color: #f2f2f2;
+}
+
 .input {
     text-align: center;
     border-radius: 10px;
@@ -37,7 +42,7 @@ p {
     width: 50%;
     font-weight: bold;
     text-align: center;
-    color:#1f1f1f;
+    color: #1f1f1f;
     margin: auto;
     background-color: #a3c7e9;
     padding: 20px;
@@ -59,4 +64,24 @@ p {
     color: #f2f2f2;
     background-color: #d82d2d;
     border-radius: 5px;
+}
+
+.button {
+    font-size: 18px;
+    color: #f2f2f2;
+    font-weight: bold;
+    background-color: #2d85d8;
+    border-radius: 5px;
+}
+
+.container-fluid {
+    font-size: 18px;
+    color: #f2f2f2;
+    background-color: #b3b3b3;
+}
+
+.footer {
+    color: #20d320;
+    text-shadow: 2px 2px 4px #000000;
+
 }

@@ -78,19 +78,34 @@ function clearInputs_Divide() {
     document.getElementById('result_Divide').innerHTML = '';
 }
 //-----------------------------------------------------//
-//---------------------- ฟังชันคลิกลิ้ง คำนวนไว ----------------------//
-
+//---------------------- ฟังชันคลิกปุ่ม คำนวนไว ----------------------//
 document.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById('calculateLink').addEventListener('click', (e) => {
         e.preventDefault();
 
         let input_CalLink = prompt("กรุณากรอกเลขที่ต้องการคำนวน: ");
 
+        // ตรวจสอบว่าผู้ใช้กรอกข้อมูลหรือไม่
+        if (input_CalLink === null || input_CalLink.trim() === "") {
+            alert("คุณยังไม่ได้กรอกข้อมูล");
+            return; // หยุดการทำงานของฟังก์ชัน
+        }
+
         try {
             let result = eval(input_CalLink);
-            alert("ผลลัพธ์คือ: " + result);
+            // ตรวจสอบว่าผลลัพธ์เป็นตัวเลขหรือไม่
+            if (!isNaN(result)) {
+                alert("ผลลัพธ์คือ: " + result.toFixed(2));
+            } else {
+                throw new Error("ข้อมูลไม่ถูกต้อง"); // โยนข้อผิดพลาดหากผลลัพธ์ไม่ใช่ตัวเลข
+            }
         } catch (e) {
-            alert("เกิดข้อผิดพลาดในการคำนวณ: " + e);
+            // ตรวจสอบประเภทข้อผิดพลาดและแสดงข้อความตามเงื่อนไข
+            if (e instanceof SyntaxError || e instanceof ReferenceError) {
+                alert("คุณกรอกข้อมูลผิด");
+            } else {
+                alert(e.message); // แสดงข้อความข้อผิดพลาดอื่นๆ ที่อาจเกิดขึ้น
+            }
         }
     });
 });
