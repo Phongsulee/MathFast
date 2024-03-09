@@ -1,3 +1,36 @@
+//---------------------- ฟังชันคลิกปุ่ม คำนวนไว ----------------------//
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById('calculateLink').addEventListener('click', (e) => {
+        e.preventDefault();
+
+        let input_CalLink = prompt("กรุณากรอกเลขที่ต้องการคำนวน: ");
+
+        // ตรวจสอบว่าผู้ใช้กรอกข้อมูลหรือไม่
+        if (input_CalLink === null || input_CalLink.trim() === "") {
+            alert("คุณยังไม่ได้กรอกข้อมูล");
+            return; // หยุดการทำงานของฟังก์ชัน
+        }
+
+        try {
+            let result = eval(input_CalLink);
+            // ตรวจสอบว่าผลลัพธ์เป็นตัวเลขหรือไม่
+            if (!isNaN(result)) {
+                alert("ผลลัพธ์คือ: " + result.toFixed(2));
+            } else {
+                throw new Error("ข้อมูลไม่ถูกต้อง"); // โยนข้อผิดพลาดหากผลลัพธ์ไม่ใช่ตัวเลข
+            }
+        } catch (e) {
+            // ตรวจสอบประเภทข้อผิดพลาดและแสดงข้อความตามเงื่อนไข
+            if (e instanceof SyntaxError || e instanceof ReferenceError) {
+                alert("คุณกรอกข้อมูลผิด");
+            } else {
+                alert(e.message); // แสดงข้อความข้อผิดพลาดอื่นๆ ที่อาจเกิดขึ้น
+            }
+        }
+    });
+});
+//----------------------------------------------------------------//
+//################################################################//
 //---------------------- ฟังชันบวก ----------------------//
 function calculateSum_Plus() {
     var input_Plus1 = document.getElementById('input_Plus1').value;
@@ -77,36 +110,41 @@ function clearInputs_Divide() {
     document.getElementById('input_Divide2').value = '';
     document.getElementById('result_Divide').innerHTML = '';
 }
-//-----------------------------------------------------//
-//---------------------- ฟังชันคลิกปุ่ม คำนวนไว ----------------------//
-document.addEventListener('DOMContentLoaded', (event) => {
-    document.getElementById('calculateLink').addEventListener('click', (e) => {
-        e.preventDefault();
+//----------------------------------------------------------------//
+//################################################################//
+//---------------------- ฟังชันหาพื้นที่วงกลม -----------------------//
+function calculateSum_SphericalSpace() {
+    var input_SphericalSpace = document.getElementById('input_SphericalSpace').value;
 
-        let input_CalLink = prompt("กรุณากรอกเลขที่ต้องการคำนวน: ");
+    if (input_SphericalSpace === "" || isNaN(input_SphericalSpace)){
+        document.getElementById('result_SphericalSpace').innerHTML = "คุณยังไม่ได้ป้อนตัวเลข";
+        return;
+    }
 
-        // ตรวจสอบว่าผู้ใช้กรอกข้อมูลหรือไม่
-        if (input_CalLink === null || input_CalLink.trim() === "") {
-            alert("คุณยังไม่ได้กรอกข้อมูล");
-            return; // หยุดการทำงานของฟังก์ชัน
-        }
+    var sum = 3.14 * (parseFloat(input_SphericalSpace) ** 2);
+    document.getElementById('result_SphericalSpace').innerHTML = sum.toFixed(2);
+}
 
-        try {
-            let result = eval(input_CalLink);
-            // ตรวจสอบว่าผลลัพธ์เป็นตัวเลขหรือไม่
-            if (!isNaN(result)) {
-                alert("ผลลัพธ์คือ: " + result.toFixed(2));
-            } else {
-                throw new Error("ข้อมูลไม่ถูกต้อง"); // โยนข้อผิดพลาดหากผลลัพธ์ไม่ใช่ตัวเลข
-            }
-        } catch (e) {
-            // ตรวจสอบประเภทข้อผิดพลาดและแสดงข้อความตามเงื่อนไข
-            if (e instanceof SyntaxError || e instanceof ReferenceError) {
-                alert("คุณกรอกข้อมูลผิด");
-            } else {
-                alert(e.message); // แสดงข้อความข้อผิดพลาดอื่นๆ ที่อาจเกิดขึ้น
-            }
-        }
-    });
-});
+function clearInputs_SphericalSpace() {
+    document.getElementById('input_SphericalSpace').value = '';
+    document.getElementById('result_SphericalSpace').innerHTML = '';
+}
+//----------------------------------------------------------------//
+//---------------------- ฟังชันหาเส้นรอบวงกลม -----------------------//
+function calculateSum_CircumferenceCircle() {
+    var input_CircumferenceCircle = document.getElementById('input_CircumferenceCircle').value;
+
+    if (input_CircumferenceCircle === "" || isNaN(input_CircumferenceCircle)){
+        document.getElementById('result_CircumferenceCircle').innerHTML = "คุณยังไม่ได้ป้อนตัวเลข";
+        return;
+    }
+
+    var sum = 2 * 3.14 * parseFloat(input_CircumferenceCircle);
+    document.getElementById('result_CircumferenceCircle').innerHTML = sum.toFixed(2);
+}
+
+function clearInputs_CircumferenceCircle() {
+    document.getElementById('input_CircumferenceCircle').value = '';
+    document.getElementById('result_CircumferenceCircle').innerHTML = '';
+}
 //----------------------------------------------------------------//
