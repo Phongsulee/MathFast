@@ -85,3 +85,11 @@ li {
     text-shadow: 2px 2px 4px #000000;
 
 }
+
+.img {
+    display: grid;
+    place-items: center;
+    width: 150px;
+    height: 150px;
+    /* หรือความสูงที่ต้องการ */
+}
