@@ -119,13 +119,13 @@ function clearInputs_Divide() {
 function calculateSum_SphericalSpace() {
     var input_SphericalSpace = document.getElementById('input_SphericalSpace').value;
 
-    if (input_SphericalSpace === "" || isNaN(input_SphericalSpace)){
+    if (input_SphericalSpace === "" || isNaN(input_SphericalSpace)) {
         document.getElementById('result_SphericalSpace').innerHTML = "คุณยังไม่ได้ป้อนตัวเลข";
         return;
     }
 
     var sum = 3.14 * (parseFloat(input_SphericalSpace) ** 2);
-    document.getElementById('result_SphericalSpace').innerHTML = sum.toFixed(2) + " ตาราง เซนติเมตร(cm²)";
+    document.getElementById('result_SphericalSpace').innerHTML = sum.toFixed(2) + " ตารางเซนติเมตร(cm²)";
 }
 
 function clearInputs_SphericalSpace() {
@@ -138,7 +138,7 @@ function clearInputs_SphericalSpace() {
 function calculateSum_CircumferenceCircle() {
     var input_CircumferenceCircle = document.getElementById('input_CircumferenceCircle').value;
 
-    if (input_CircumferenceCircle === "" || isNaN(input_CircumferenceCircle)){
+    if (input_CircumferenceCircle === "" || isNaN(input_CircumferenceCircle)) {
         document.getElementById('result_CircumferenceCircle').innerHTML = "คุณยังไม่ได้ป้อนตัวเลข";
         return;
     }
@@ -163,8 +163,8 @@ function calculateSum_AnyTriangle() {
         return;
     }
 
-    var sum = (1/2) * parseFloat(input_AnyTriangle1) * parseFloat(input_AnyTriangle2);
-    document.getElementById('result_AnyTriangle').innerHTML = sum.toFixed(2) + " ตาราง เซนติเมตร(cm²)";
+    var sum = (1 / 2) * parseFloat(input_AnyTriangle1) * parseFloat(input_AnyTriangle2);
+    document.getElementById('result_AnyTriangle').innerHTML = sum.toFixed(2) + " ตารางเซนติเมตร(cm²)";
 }
 
 function clearInputs_AnyTriangle() {
@@ -178,14 +178,14 @@ function clearInputs_AnyTriangle() {
 function calculateSum_ThreeSided() {
     var input_ThreeSided = document.getElementById('input_ThreeSided').value;
 
-    if (input_ThreeSided === "" || isNaN(input_ThreeSided)){
+    if (input_ThreeSided === "" || isNaN(input_ThreeSided)) {
         document.getElementById('result_ThreeSided').innerHTML = "คุณยังไม่ได้ป้อนตัวเลข";
         return;
     }
 
     // สูตรการหาพื้นที่สามด้านเท่า = (√3/4) × ด้าน²
-    var sum = ((Math.sqrt(3) / 4) * parseFloat(Math.pow(input_ThreeSided, 2)));     
-    document.getElementById('result_ThreeSided').innerHTML = sum.toFixed(2) + " ตาราง เซนติเมตร(cm²)";
+    var sum = ((Math.sqrt(3) / 4) * parseFloat(Math.pow(input_ThreeSided, 2)));
+    document.getElementById('result_ThreeSided').innerHTML = sum.toFixed(2) + " ตารางเซนติเมตร(cm²)";
 }
 
 function clearInputs_ThreeSided() {
@@ -198,13 +198,13 @@ function clearInputs_ThreeSided() {
 function calculateSum_Square() {
     var input_Square = document.getElementById('input_Square').value;
 
-    if (input_Square === "" || isNaN(input_Square)){
+    if (input_Square === "" || isNaN(input_Square)) {
         document.getElementById('result_Square').innerHTML = "คุณยังไม่ได้ป้อนตัวเลข";
         return;
     }
 
-    var sum = parseFloat(input_Square) * parseFloat(input_Square);     
-    document.getElementById('result_Square').innerHTML = sum.toFixed(2) + " ตาราง เซนติเมตร(cm²)";
+    var sum = parseFloat(input_Square) * parseFloat(input_Square);
+    document.getElementById('result_Square').innerHTML = sum.toFixed(2) + " ตารางเซนติเมตร(cm²)";
 }
 
 function clearInputs_Square() {
@@ -224,7 +224,7 @@ function calculateSum_Rectangle() {
     }
 
     var sum = parseFloat(input_Rectangle1) * parseFloat(input_Rectangle2);
-    document.getElementById('result_Rectangle').innerHTML = sum.toFixed(2) + " ตาราง เซนติเมตร(cm²)";
+    document.getElementById('result_Rectangle').innerHTML = sum.toFixed(2) + " ตารางเซนติเมตร(cm²)";
 }
 
 function clearInputs_Rectangle() {
@@ -245,7 +245,7 @@ function calculateSum_Parallelogram() {
     }
 
     var sum = parseFloat(input_Parallelogram1) * parseFloat(input_Parallelogram2);
-    document.getElementById('result_Parallelogram').innerHTML = sum.toFixed(2) + " ตาราง เซนติเมตร(cm²)";
+    document.getElementById('result_Parallelogram').innerHTML = sum.toFixed(2) + " ตารางเซนติเมตร(cm²)";
 }
 
 function clearInputs_Parallelogram() {
@@ -266,7 +266,7 @@ function calculateSum_Rhombus() {
     }
 
     var sum = parseFloat(input_Rhombus1) * parseFloat(input_Rhombus2);
-    document.getElementById('result_Rhombus').innerHTML = sum.toFixed(2) + " ตาราง เซนติเมตร(cm²)";
+    document.getElementById('result_Rhombus').innerHTML = sum.toFixed(2) + " ตารางเซนติเมตร(cm²)";
 }
 
 function clearInputs_Rhombus() {
@@ -287,7 +287,7 @@ function calculateSum_Rhombus() {
     }
 
     var sum = parseFloat(input_Rhombus1) * parseFloat(input_Rhombus2);
-    document.getElementById('result_Rhombus').innerHTML = sum.toFixed(2) + " ตาราง เซนติเมตร(cm²)";
+    document.getElementById('result_Rhombus').innerHTML = sum.toFixed(2) + " ตารางเซนติเมตร(cm²)";
 }
 
 function clearInputs_Rhombus() {
@@ -308,8 +308,8 @@ function calculateSum_Trapezoid() {
         return;
     }
 
-    var sum = (1/2) * (parseFloat(input_Trapezoid1) + parseFloat(input_Trapezoid2)) * parseFloat(input_Trapezoid3);
-    document.getElementById('result_Trapezoid').innerHTML = sum.toFixed(2) + " ตาราง เซนติเมตร(cm²)";
+    var sum = (1 / 2) * (parseFloat(input_Trapezoid1) + parseFloat(input_Trapezoid2)) * parseFloat(input_Trapezoid3);
+    document.getElementById('result_Trapezoid').innerHTML = sum.toFixed(2) + " ตารางเซนติเมตร(cm²)";
 }
 
 function clearInputs_Trapezoid() {
@@ -330,8 +330,8 @@ function calculateSum_KiteShapedSquare() {
         return;
     }
 
-    var sum = (1/2) * (parseFloat(input_KiteShapedSquare1) * parseFloat(input_KiteShapedSquare2));
-    document.getElementById('result_KiteShapedSquare').innerHTML = sum.toFixed(2) + " ตาราง เซนติเมตร(cm²)";
+    var sum = (1 / 2) * (parseFloat(input_KiteShapedSquare1) * parseFloat(input_KiteShapedSquare2));
+    document.getElementById('result_KiteShapedSquare').innerHTML = sum.toFixed(2) + " ตารางเซนติเมตร(cm²)";
 }
 
 function clearInputs_KiteShapedSquare() {
@@ -352,8 +352,8 @@ function calculateSum_Trapezium() {
         return;
     }
 
-    var sum = (1/2) * (parseFloat(input_Trapezium1) * parseFloat(input_Trapezium2) * parseFloat(input_Trapezium3));
-    document.getElementById('result_Trapezium').innerHTML = sum.toFixed(2) + " ตาราง เซนติเมตร(cm²)";
+    var sum = (1 / 2) * (parseFloat(input_Trapezium1) * parseFloat(input_Trapezium2) * parseFloat(input_Trapezium3));
+    document.getElementById('result_Trapezium').innerHTML = sum.toFixed(2) + " ตารางเซนติเมตร(cm²)";
 }
 
 function clearInputs_Trapezium() {
