@@ -1,4 +1,4 @@
-//---------------------- ฟังชันคลิกปุ่ม คำนวนไว ----------------------//
+//---------------------- ฟังชันเครื่องคิดเลข ----------------------//
 document.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById('calculateLink').addEventListener('click', (e) => {
         e.preventDefault();
@@ -189,7 +189,7 @@ function calculateSum_ThreeSided() {
 }
 
 function clearInputs_ThreeSided() {
-    document.getElementById('inputThreeSided').value = '';
+    document.getElementById('input_ThreeSided').value = '';
     document.getElementById('result_ThreeSided').innerHTML = '';
 }
 //----------------------------------------------------------------//
